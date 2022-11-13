@@ -107,12 +107,11 @@ body {
 
 .welcome-container {
     display: flex;
-    justify-content: space-around;
-    gap: 3rem;
+    justify-content: space-between;
+    gap: 5rem;
     max-width: 100rem;
     margin-bottom: -5rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 5rem;
     transition: 200ms;
 }
 
