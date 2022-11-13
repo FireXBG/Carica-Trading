@@ -107,24 +107,70 @@ body {
     color: #649737;
     left: 0;
     right: 0;
+    opacity: 0%;
+    transition: 1s;
 }
 
-.about-us-flex {
+.section-1 {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    margin: 0 5rem;
+    margin-bottom: 15rem;
     gap: 5rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
 }
 
-.about-us-flex h1 {
-    font-size: 2.3rem;
+.section-2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5rem;
+    margin-bottom: 15rem;
+    gap: 5rem;
 }
 
-.about-us-right img {
-    width: 40rem;
-    height: auto;
-    object-fit: contain;
+.section-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 5rem;
+    gap: 1rem;
+    text-align: center;
+}
+
+.left-1 h1,
+.left-2 h1,
+.right-3 h1 {
+    font-size: 2.5rem;
+    margin-bottom: 7rem;
+    font-weight: 1000;
+    opacity: 0%;
+    transition: 1s;
+}
+
+.left-1 p,
+.left-2 p,
+.right-3 p {
+    font-size: 1.5rem;
+    opacity: 0%;
+    transition: 1s;
+}
+
+/* SVG VECTORS */
+
+#Person-1,
+#Surround-1,
+#Cart-1,
+#Boxes-1,
+#Boxes-1_2,
+#Person-2,
+#Three-1,
+#Three-2,
+#Star-1,
+#Star-2,
+#Star-3,
+#icon {
+    opacity: 0%;
+    transition: 1s;
 }
 
 /*FOOTER */
