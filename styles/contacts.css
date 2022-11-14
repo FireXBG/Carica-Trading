@@ -114,6 +114,8 @@ body {
     color: #649737;
     left: 0;
     right: 0;
+    opacity: 0%;
+    transition: 1s;
 }
 
 /* form styles */
@@ -121,7 +123,7 @@ body {
 .contacts-flex {
     display: flex;
     justify-content: space-between;
-    margin: 1rem 10rem;
+    margin: 0rem 10rem;
 }
 
 .contacts-left {
@@ -130,6 +132,8 @@ body {
     width: 31rem;
     padding: 3rem;
     border-radius: 25px;
+    opacity: 0%;
+    transition: 1s;
 }
 
 .contacts-left form {
@@ -146,8 +150,8 @@ body {
     border: solid 0.2rem #385c19;
     border-radius: 10px;
     transition: 200ms;
+    opacity: 0%;
 }
-
 .contacts-left form textarea {
     background-color: transparent;
     color: #9ac276;
@@ -156,6 +160,7 @@ body {
     border: solid 0.2rem #385c19;
     border-radius: 10px;
     transition: 200ms;
+    opacity: 0%;
 }
 
 .contacts-left form input:focus,
@@ -177,6 +182,7 @@ body {
     font-weight: 600;
     font-size: 1.1rem;
     transition: 200ms;
+    opacity: 0%;
 }
 
 .submit:hover {
@@ -194,12 +200,25 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 2rem;
 }
 
 .flex-top h1 {
     margin-bottom: 3rem;
+    opacity: 0%;
+    transition: 1s;
 }
 
 .flex-top h1:last-child {
     margin-bottom: 0;
+}
+
+/* SVG */
+
+#Person,
+#Box1,
+#Box2,
+#Box3 {
+    opacity: 0%;
+    transition: 1s;
 }
