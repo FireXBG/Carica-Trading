@@ -2,7 +2,7 @@
 
 document.querySelector(".submit").addEventListener("click", function(event) {
     event.preventDefault();
-    fetch("https://formsubmit.co/ajax/krisi.bg111@icloud.com", {
+    fetch("https://formsubmit.co/ajax/support@carica.bg", {
         method: "POST",
         headers: { 
             'Content-Type': 'application/json',
