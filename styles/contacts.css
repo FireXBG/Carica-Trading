@@ -29,6 +29,7 @@ body {
   justify-content: space-between;
   align-self: center;
   align-items: center;
+  justify-content: center;
   padding: 0.6rem 6.2rem;
   background-color: #02171c;
 }
@@ -124,6 +125,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 0rem 10rem;
+  transition: 1s;
 }
 
 .contacts-left {
@@ -219,4 +221,66 @@ body {
 #Box3 {
   opacity: 0%;
   transition: 1s;
+}
+
+@media screen and (max-width: 1450px) {
+  .contacts-left {
+    width: 27rem;
+  }
+}
+
+@media screen and (max-width: 1370px) {
+  .contacts-left {
+    width: 20rem
+  }
+
+  .flex-top h1 {
+    font-size: 1.5rem;
+  }
+
+  .contacts-flex {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .contacts-flex {
+    margin-left: 2rem;
+    margin-right: 2rem
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
+  .wavy-block svg {
+    display: none;
+  }
+
+  .contacts-flex {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .contacts-left {
+    align-items: center;
+    justify-content: center;
+    margin-top: 12rem;
+  }
+
+  .contacts-right {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contacts-right h1 {
+    text-align: center;
+  }
+
+  .flex-bottom svg {
+    width: 300px;
+    height: 300px;
+  }
 }

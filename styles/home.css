@@ -40,6 +40,10 @@ body {
     margin-right: 3rem;
 }
 
+.nav-links svg {
+    display: none;
+}
+
 .nav-links a{
     text-decoration: none;
     color: #649737;
@@ -313,6 +317,10 @@ body {
         transition: 200ms;
     }
 
+    .welcome-container img {
+        margin-top: 10rem;
+    }
+
     .welcome-heading {
         font-size: 4rem;
         transition: 200ms;
@@ -395,62 +403,86 @@ body {
         font-size: 1.5rem;
         transition: 200ms;
     }
-}
-
-@media screen and (max-width: 900px) {
+    
+    /* landing page */
+    
     .welcome-container {
-        margin-bottom: 1.3rem;
-        transition: 200ms;
+        flex-direction: column;
+        margin-left: 0;
+        gap: 0;
     }
-
+    
+    .welcome-flex-left {
+        margin-left: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    
     .welcome-heading {
         font-size: 3rem;
-        transition: 200ms;
+        margin-left: 0;
+        margin-top: 3rem;
+        text-align: center;
     }
-
+    
     .welcome-text {
-        font-size: 0.65rem;
-        transition: 200ms;
+        margin: 0;
+        font-size: 1.1rem;
+        text-align: center;
     }
-
+    
     .button-home {
-        padding: 0.7rem;
-        font-size: 0.5rem;
-    }
-
-    .nav-links {
-        font-size: 0.8rem;
-        transition: 200ms;
-    }
-
-    .logo h1 {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        width: 10rem;
+        height: 3.8rem;
         font-size: 1rem;
-        transition: 200ms;
+        text-align: center;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
     }
-
-    .logo-img {
-        width: 2rem;
-        transition: 200ms;
+    
+    .welcome-container img {
+        margin-top: 1rem;
     }
-
+    
+    .why-choose-flex {
+        flex-direction: column;
+    }
+    
+    .why-choose-container h1 {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    
+    .why-choose-container p {
+        font-size: 1rem;
+    }
+    
     .why-choose-1-img {
         display: none;
-        transition: 200ms;
     }
-
+    
     .why-choose-2-img {
-        display: none;
-        transition: 200ms;
+        margin-right: 0;
     }
-
-    .why-choose-container h1 {
-        font-size: 2rem;
-        transition: 200ms;
+    
+    /* footer */
+    
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
     }
-
-    .why-choose-container p {
-        width: 70%;
-        font-size: 0.8rem;
-        transition: 200ms;
+    
+    .footer-links {
+        margin: 0;
+    }
+    
+    .footer-credits {
+        margin: 0;
     }
 }

@@ -6,6 +6,10 @@ body {
     padding: 0;
 }
 
+svg {
+    transition: 200ms;
+}
+
 .logo {
     color: #649737;
     display: flex;
@@ -154,7 +158,6 @@ body {
     opacity: 0%;
     transition: 1s;
 }
-
 /* SVG VECTORS */
 
 #Person-1,
@@ -224,4 +227,113 @@ body {
 .footer-credits a:hover {
     transition: 200ms;
     border-bottom: solid 0.2rem #ecf39e;
+}
+
+@media screen and (max-width: 1600px) {
+    .right-1 svg {
+        width: 700px;
+        height: 400px;
+    }
+
+    .right-2 svg {
+        width: 700px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .right-1 svg,
+    .right-2 svg {
+        width: 500px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .section-1 {
+        margin-top: 15rem;
+    }
+
+    .section-1 h1,
+    .section-2 h1,
+    .section-3 h1 {
+        margin: 0;
+    }
+
+    .section-1,
+    .section-2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .wavy-block svg {
+        display: none;
+    }
+
+    .left-1 h1,
+    .left-2 h1,
+    .right-3 h1 {
+        font-size: 1.7rem;
+    }
+
+    .left-1 p,
+    .left-2 p,
+    .right-3 p {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .right-1 svg,
+    .right-2 svg {
+        width: 300px;
+        height: 200px;
+    }
+
+    .left-3 svg {
+        width: 400px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+    .left-3 svg {
+        width: 300px;
+    }
+
+    /* footer */
+    
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    
+    .footer-links {
+        margin: 0;
+    }
+    
+    .footer-credits {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .right-1 svg {
+        width: 150px;
+    }
+
+    .right-2 svg {
+        width: 200px;
+    }
+
+    .left-3 svg {
+        width: 300px;
+    }
 }
