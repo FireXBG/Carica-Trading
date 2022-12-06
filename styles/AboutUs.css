@@ -266,6 +266,12 @@ svg {
         text-align: center;
     }
 
+    .section-1,
+    .section-2,
+    .section-3 {
+        align-items: center;
+    }
+
     .wavy-block svg {
         display: none;
     }
@@ -301,8 +307,28 @@ svg {
 
 @media screen and (max-width: 430px) {
 
+    .right-1 svg {
+        width: 300px;
+        height: auto;
+    }
+    
+    .right-2 svg {
+        width: 300px;
+        height: auto;
+    }
+
     .left-3 svg {
         width: 300px;
+        height: auto;
+    }
+
+    .section-1 {
+        margin-bottom: 5rem;
+        gap: 1rem;
+    }
+
+    .section-2 {
+        margin-bottom: 5rem;
     }
 
     /* footer */
@@ -320,20 +346,5 @@ svg {
     
     .footer-credits {
         margin: 0;
-    }
-}
-
-@media screen and (max-width: 375px) {
-
-    .right-1 svg {
-        width: 150px;
-    }
-
-    .right-2 svg {
-        width: 200px;
-    }
-
-    .left-3 svg {
-        width: 300px;
     }
 }
