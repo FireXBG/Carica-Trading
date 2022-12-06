@@ -29,9 +29,8 @@ body {
   justify-content: space-between;
   align-self: center;
   align-items: center;
-  justify-content: center;
   padding: 0.6rem 6.2rem;
-  background-color: #02171c;
+  background-color: #02171C;
 }
 
 .nav-links {
@@ -41,7 +40,11 @@ body {
   margin-right: 3rem;
 }
 
-.nav-links a {
+.nav-links svg {
+  display: none;
+}
+
+.nav-links a{
   text-decoration: none;
   color: #649737;
   transition: 200ms;
@@ -282,5 +285,20 @@ body {
   .flex-bottom svg {
     width: 300px;
     height: 300px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wavy-block h1 {
+    font-size: 1.5rem;
+  }
+
+  .contacts-left {
+    width: 15rem;
+    margin-top: 7rem;
+  }
+
+  .submit {
+    font-size: 1rem;
   }
 }
