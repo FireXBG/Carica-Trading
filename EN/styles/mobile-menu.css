@@ -1,0 +1,69 @@
+.mobile-button {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-button-close {
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 950px) {
+    .nav-links {
+        margin: 0;
+        flex-direction: column;
+        position: fixed;
+        top: 0rem;
+        right: 0;
+        background-color: #02171C;
+        width: 0;
+        overflow: hidden;
+        opacity: 0;
+        gap: 3rem;
+        height: 100vh;
+        z-index: 2;
+        transition: 200ms;
+    }
+
+    .nav-links svg {
+        display: inline-block;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .mobile-button {
+        display: inline-block;
+        background-color: #02171C;
+        border: none;
+        cursor: hover;
+        width: 2rem;
+        height: auto;
+    }
+
+    .mobile-button-close {
+        background-color: #02171C;
+        height: 3rem;
+        width: 3rem;
+        border: none;
+        display: inline-block;
+    }
+
+    .logo {
+        margin-left: -5rem;
+    }
+
+    .logo h1 {
+        font-size: 1rem;
+    }
+
+    .logo img {
+        width: 3rem;
+        height: auto;
+    }
+
+    /* language menu */
+
+    .lang-dropdown {
+        top: 0.8rem;
+    }
+}
