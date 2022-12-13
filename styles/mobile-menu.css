@@ -1,3 +1,7 @@
+.lang-dropdown {
+    display: none;
+}
+
 .mobile-button {
     display: none;
     cursor: pointer;
