@@ -143,6 +143,12 @@ body {
     max-width: 100%;
 }
 
+.welcome-flex-left a:hover {
+    background-color: transparent;
+    border: solid 0.2rem #02171C;
+    color: #02171C;
+}
+
 .button{
     display: inline-block;
     text-decoration: none;
@@ -166,6 +172,7 @@ body {
     margin-left: 4rem;
     margin-top: 1rem;
     transition: 200ms;
+    z-index: 1;
 }
 
 .button-home:hover {
@@ -253,6 +260,10 @@ body {
     width: 15rem;
     height: auto;
     object-fit: contain;
+}
+
+.first-wave {
+    margin-top: 3rem;
 }
 
 /* FOOTER */
