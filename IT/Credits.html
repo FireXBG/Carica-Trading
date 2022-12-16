@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="bg">
+<html lang="IT">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,33 +8,77 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/credits.css">
-    <title>Credits</title>
+    <link rel="stylesheet" href="/styles/mobile-menu.css">
+    <link rel="stylesheet" href="/styles/loader.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="icon" href="/img/Logo.png">
+    <title>Carica Trading - Credits</title>
 </head>
 <body>
-    <nav class="nav">
-        <div class="logo">
-            <img src="/img/Logo.png" alt="Carica Trading logo" class="logo-img">
-            <h1>CARICA TRADING</h1>
-        </div>
-        <div class="nav-links">
-            <a href="/index.html">Начало</a>
-            <a href="/AboutUs.html">За нас</a>
-            <a href="/products.html">Продукти</a>
-            <a href="#">Контакти</a>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QRE4ZFNPCZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QRE4ZFNPCZ');
+</script>
+
+    <div class="content">
+
+        <div class="loader">
+            <div class="ring"></div>
+            <span class="isLoaded">CARICAMENTO...</span>
         </div>
 
-        <div class="lang-dropdown">
-            <button class="drop-btn">BG</button>
-            <div class="dropdown-content">
-                <a href="/EN/Credits.html">EN</a>
-                <a href="/IT/Credits.html">IT</a>
+        <nav class="nav">
+            <div class="logo">
+                <img src="/img/Logo.png" alt="Carica Trading logo" class="logo-img">
+                <h1>CARICA TRADING</h1>
             </div>
+            <button class="mobile-button" onclick="menuHandle()"><?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="3rem" height="3rem" viewBox="0 0 209 112" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g><rect x="-0" y="48.113" width="208.333" height="13.989" style="fill:#649737;"/><rect x="0" y="97.215" width="208.333" height="13.989" style="fill:#649737;"/><rect x="0" y="0" width="208.333" height="13.989" style="fill:#649737;"/></g></svg></button>
+            <div class="nav-links">
+                <button class="mobile-button-close" onclick="menuClose()"><?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 209 209" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g><path d="M200.681,208.333l7.652,0l0,-9.763l-198.57,-198.57l-9.763,0l0,7.652l200.681,200.681Z" style="fill:#649737;"/><path d="M0,200.222l200.222,-200.222l8.111,0l0,9.303l-199.03,199.03l-9.303,0l0,-8.111Z" style="fill:#649737;"/></g></svg></button>
+                <a href="/IT/index.html">Home</a>
+                <a href="/IT/AboutUs.html">Chi siamo</a>
+                <a href="/IT/products.html">Prodotti</a>
+                <a href="/IT/contacts.html">Contatti</a>
+            </div>
+            <div class="lang-dropdown">
+                <button class="drop-btn">IT</button>
+                <div class="dropdown-content">
+                    <a href="/index.html">BG</a>
+                    <a href="/EN/index.html">EN</a>
+                </div>
+            </div>
+        </nav>
+
+        <p class="p">Sul sito sono state utilizzate le seguenti risorse:</p>
+        <div class="links">    
+            <a href="https://www.freepik.com/free-vector/world-environment-day-paper-style-background_25973140.htm#query=eko&position=40&from_view=search">Freepik</a>
+            <a href="https://www.freepik.com/free-vector/set-business-concept_4950294.htm#query=Manager&position=33&from_view=search">Freepik</a>
         </div>
-    </nav>
-    <a href="https://www.freepik.com/free-vector/world-environment-day-paper-style-background_25973140.htm#query=eko&position=40&from_view=search">Freepik</a>
-    <a href="https://www.freepik.com/free-vector/gradient-ecology-badge-collection_21438970.htm#page=8&query=eko&position=2&from_view=search">Freepik</a>
-    <a href="https://www.freepik.com/free-vector/nice-businessman-character-set_2960917.htm#query=person&position=46&from_view=search">Freepik</a>
-    <a href="https://www.freepik.com/free-vector/set-business-concept_4950294.htm#query=Manager&position=33&from_view=search">Freepik</a>
-    <a href="https://www.freepik.com/free-vector/customer-support-representatives-working-call-center_9174514.htm#page=2&query=about%20us&position=28&from_view=search&track=sph">Freepik</a>
-</body>
-</html>
+
+        <footer class="footer">
+            <div class="footer-links">
+                <a href="/IT/index.html">Inizio</a>
+                <a href="/IT/AboutUs.html">Chi siamo</a>
+                <a href="/IT/products.html">Prodotti</a>
+                <a href="/IT/contacts.html">Contatti</a>
+            </div>
+            <div class="footer-contacts">
+                <p>+359 879385410</p>
+                <p>CaricaPD@gmail.com</p>
+                <p>www.carica.bg</p>
+            </div>
+            <div class="footer-credits">
+                <a href="/Credits.html">Credits</a>
+            </div>
+        </footer>
+    </div>
+    <script src="/JS/loader-remove.js"></script>
+    <script src="/JS/menu.js"></script>
+    <script src="/JS/leavingAnimation.js"></script>
+    </body>
+    </html>
