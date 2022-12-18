@@ -5,26 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chris is gay</title>
+    <style>
+      #___gcse_0{
+        display: none;
+      }
+    </style>
 </head>
 <body>
+<script async src="https://cse.google.com/cse.js?cx=a0bbaf07d7ee74c12">
+</script>
+<div class="gcse-search"></div>
 
-  <script>
-    var service_url = 'https://kgsearch.googleapis.com/v1/entities:search';
-    var params = {
-      'query': 'lev to euros',
-      'limit': 10,
-      'indent': true,
-      'key' : 'AIzaSyDlCVZJwjF9f3Wo8MBatgX_pg0p7iH1IHQ',
-    };
-    $.getJSON(service_url + '?callback=?', params, function(response) {
-      $.each(response.itemListElement, function(i, element) {
-        $('<div>', {text:element['result']['name']}).appendTo(document.body);
-      });
-    });
-  </script>
-  
-
-  <!--
     <script src="https://apis.google.com/js/api.js"></script>
     <script>
       /**
@@ -42,8 +33,9 @@
       // Make sure the client is loaded before calling this method.
       function execute() {
         return gapi.client.search.cse.list({
-          "q": "https://www.google.com/search?client=firefox-b-d&q=lev+to+euro",
-          "cx": "placeholder"
+          "q": "levs to euro",
+          "num": 10,
+          "cx": "a0bbaf07d7ee74c12"
         })
         .then(function(response) {
           // Handle the results here (response.result has the parsed body).
@@ -55,6 +47,7 @@
     </script>
     <button onclick="loadClient()">load</button>
     <button onclick="execute()">execute</button>
-  -->
+  
+</script>
   </body>
   </html>
