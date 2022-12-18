@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris is gay</title>
+</head>
+<body>
+
+  <script>
+    var service_url = 'https://kgsearch.googleapis.com/v1/entities:search';
+    var params = {
+      'query': 'lev to euros',
+      'limit': 10,
+      'indent': true,
+      'key' : 'AIzaSyDlCVZJwjF9f3Wo8MBatgX_pg0p7iH1IHQ',
+    };
+    $.getJSON(service_url + '?callback=?', params, function(response) {
+      $.each(response.itemListElement, function(i, element) {
+        $('<div>', {text:element['result']['name']}).appendTo(document.body);
+      });
+    });
+  </script>
+  
+
+  <!--
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script>
+      /**
+      * Sample JavaScript code for search.cse.list
+      * See instructions for running APIs Explorer code samples locally:
+      * https://developers.google.com/explorer-help/code-samples#javascript
+      */
+      
+      function loadClient() {
+        gapi.client.setApiKey("AIzaSyDlCVZJwjF9f3Wo8MBatgX_pg0p7iH1IHQ");
+        return gapi.client.load("https://content.googleapis.com/discovery/v1/apis/customsearch/v1/rest")
+        .then(function() { console.log("GAPI client loaded for API"); },
+        function(err) { console.error("Error loading GAPI client for API", err); });
+      }
+      // Make sure the client is loaded before calling this method.
+      function execute() {
+        return gapi.client.search.cse.list({
+          "q": "https://www.google.com/search?client=firefox-b-d&q=lev+to+euro",
+          "cx": "placeholder"
+        })
+        .then(function(response) {
+          // Handle the results here (response.result has the parsed body).
+          console.log("Response", response);
+        },
+        function(err) { console.error("Execute error", err); });
+      }
+      gapi.load("client");
+    </script>
+    <button onclick="loadClient()">load</button>
+    <button onclick="execute()">execute</button>
+  -->
+  </body>
+  </html>
