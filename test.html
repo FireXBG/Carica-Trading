@@ -5,49 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chris is gay</title>
-    <style>
-      #___gcse_0{
-        display: none;
-      }
-    </style>
+      <script>
+         //Javascript cbPTpldrQX6HMrEuUAl3vbCdBmHSyDXd
+         var myHeaders = new Headers();
+         myHeaders.append("apikey", "cbPTpldrQX6HMrEuUAl3vbCdBmHSyDXd");
+
+         var requestOptions = {
+           method: 'GET',
+           redirect: 'follow',
+           headers: myHeaders
+         };
+         var docx;
+         fetch("https://api.apilayer.com/exchangerates_data/convert?to=EUR&from=BGN&amount=2", requestOptions)
+           .then(response => response.text())
+           .then(result => {
+               docx = result;
+            })
+           .catch(error => console.log('error', error));
+         function slicee(docx)
+         {
+            var sliced;
+            var ps = docx.search('result')+8; //console.log(ps);
+            var pe = ps+5; //console.log(pe);
+            if(parseInt(docx[pe]) >= 5)
+               sliced = parseFloat(docx.slice(ps,pe)) + 0.01;
+            else
+               sliced = docx.slice(ps,pe)
+            return sliced;
+         }
+      </script>
 </head>
 <body>
-<script async src="https://cse.google.com/cse.js?cx=a0bbaf07d7ee74c12">
-</script>
-<div class="gcse-search"></div>
-
-    <script src="https://apis.google.com/js/api.js"></script>
-    <script>
-      /**
-      * Sample JavaScript code for search.cse.list
-      * See instructions for running APIs Explorer code samples locally:
-      * https://developers.google.com/explorer-help/code-samples#javascript
-      */
-      
-      function loadClient() {
-        gapi.client.setApiKey("AIzaSyDlCVZJwjF9f3Wo8MBatgX_pg0p7iH1IHQ");
-        return gapi.client.load("https://content.googleapis.com/discovery/v1/apis/customsearch/v1/rest")
-        .then(function() { console.log("GAPI client loaded for API"); },
-        function(err) { console.error("Error loading GAPI client for API", err); });
-      }
-      // Make sure the client is loaded before calling this method.
-      function execute() {
-        return gapi.client.search.cse.list({
-          "q": "levs to euro",
-          "num": 10,
-          "cx": "a0bbaf07d7ee74c12"
-        })
-        .then(function(response) {
-          // Handle the results here (response.result has the parsed body).
-          console.log("Response", response);
-        },
-        function(err) { console.error("Execute error", err); });
-      }
-      gapi.load("client");
-    </script>
-    <button onclick="loadClient()">load</button>
-    <button onclick="execute()">execute</button>
   
-</script>
-  </body>
-  </html>
+</body>
+</html>

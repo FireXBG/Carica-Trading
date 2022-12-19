@@ -206,6 +206,11 @@ body {
     width: 60%;
 }
 
+.about-us-container h1,
+.about-us-container p {
+    color: #649737;
+}
+
 .about-us-button {
     display: inline-block;
     text-decoration: none;
@@ -366,6 +371,10 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
+
+    .about-us-container h1 {
+        margin-bottom: -1rem;
+    }
     
     .welcome-container {
         margin-bottom: 1.2rem;

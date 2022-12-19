@@ -1,4 +1,4 @@
-window.onload = function () {
+window.onload = function animate() {
   
     const anchors = document.querySelectorAll(".content a");
     for (let i = 0; i < anchors.length; i++) {

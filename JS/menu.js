@@ -1,3 +1,4 @@
+   // Mobile menu
     var toggle;
     function menuHandle() {
         var menu = document.querySelector(".nav-links");
@@ -31,6 +32,44 @@
         }, 150);
         toggle = false;
     }
-    
-    
-    
+
+    var logo = document.querySelector(".logo");
+    var loader = document.querySelector('.loader');
+    if(window.location.href.indexOf("EN") > -1) {
+        logo.style.cursor = "pointer";
+        logo.addEventListener("click", () => {
+            loader.style.opacity = "0";
+            loader.style.display = "flex";
+            setTimeout(() => {
+                loader.style.opacity = "1";
+            }, 300);
+            setTimeout(() => {
+                window.location.href = "/EN"
+            }, 200);
+        })
+ } else if (window.location.href.indexOf("IT") > -1) {
+    logo.style.cursor = "pointer";
+    logo.addEventListener("click", () => {
+        loader.style.opacity = "0";
+        loader.style.display = "flex";
+        setTimeout(() => {
+            loader.style.opacity = "1";
+        }, 300);
+        setTimeout(() => {
+            window.location.href = "/IT";
+        }, 200);
+    })
+ } else {
+    logo.style.cursor = "pointer";
+    logo.addEventListener("click", () => {
+        loader.style.opacity = "0";
+        loader.style.display = "flex";
+        setTimeout(() => {
+            loader.style.opacity = "1";
+        }, 300);
+        setTimeout(() => {
+            window.location.href = "/index.html";
+        }, 200);
+    })
+ }
+ 
