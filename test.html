@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chris is gay</title>
       <script>
          //Javascript cbPTpldrQX6HMrEuUAl3vbCdBmHSyDXd
-         var myHeaders = new Headers();
+         /*var myHeaders = new Headers();
          myHeaders.append("apikey", "cbPTpldrQX6HMrEuUAl3vbCdBmHSyDXd");
 
          var requestOptions = {
@@ -32,10 +33,24 @@
             else
                sliced = docx.slice(ps,pe)
             return sliced;
-         }
+         }*/
+         $.getJSON('https://www.floatrates.com/daily/bgn.json', function(data) {
+    // JSON result in `data` variable
+});
+function clickme(){
+   var price;
+   if(window.location.href.indexOf("IT") || window.location.href.indexOf("EN")) {
+      price = document.querySelectorAll(".product-flex>.right>.item>p")[0].innerText.match(/^(.*).{19}/i)[1].trim()
+   } else {
+      price = document.querySelectorAll(".product-flex>.right>.item>p")[0].innerText.match(/^(.*).{20}/i)[1].trim()
+      }
+   price = price * data.usd.rate;  
+   return price;
+}
+
       </script>
 </head>
 <body>
-  
+  <button onclick="clickme()">Click me if you are gay</button>
 </body>
 </html>
