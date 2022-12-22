@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="BG">
 <head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="../JS/usdCalc.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -12,9 +14,26 @@
     <link rel="stylesheet" href="/styles/mobile-menu.css">
     <link rel="icon" href="/img/Logo.png">
     <title>Продукт - GO-PR310</title>
+    
+    <script>
+   /* var bottom;
+    $.getJSON('https://www.floatrates.com/daily/bgn.json', function(data) {
+    bottom = data.usd.rate;
+    // JSON result in `data` variable
+});
+function clickme(){
+   var price;
+   if(window.location.href.indexOf("IT") || window.location.href.indexOf("EN")) {
+      price = parseFloat(document.querySelectorAll(".product-flex>.right>.item>p")[0].innerText.match(/^(.*).{19}/i)[1].trim())
+   } else {
+      price = parseFloat(document.querySelectorAll(".product-flex>.right>.item>p")[0].innerText.match(/^(.*).{20}/i)[1].trim())
+      }
+   price = price * bottom;
+   price = Math.round((price + Number.EPSILON) * 100) / 100;
+   return price;*/
+</script>
 </head>
 <body>
-
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QRE4ZFNPCZ"></script>
 <script>
@@ -24,11 +43,10 @@
 
   gtag('config', 'G-QRE4ZFNPCZ');
 </script>
-
     <div class="content">
     <div class="loader">
         <div class="ring"></div>
-        <span class="isLoaded">LOADING...</span>
+        <span class="isLoaded">Зареждане...</span>
     </div>
 
 
@@ -67,6 +85,8 @@
                     <p>52лв - комплект 200бр.</p>
                     <p>Персонална бройка - 0,30лв/бр.</p>
                     <p>Налични бройки: 1000</p>
+                    <!--<button class="usd">USD</button>
+                    <button class="bgn">BGN</button>-->
                 </div>
                 <div class="description">
                     <p>Този продукт е от: Захарна тръстика</p>
