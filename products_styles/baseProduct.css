@@ -158,6 +158,10 @@ body {
   color: #02171c;
 }
 
+.bgn {
+  display: none;
+}
+
 .bgn,
 .usd {
   background-color: transparent;

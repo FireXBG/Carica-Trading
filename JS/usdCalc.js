@@ -11,19 +11,6 @@ document.addEventListener("DOMContentLoaded", async function () {
     $("body > div > div.product-flex > div.right > div.item").append(
       '<button class="bgn">BGN</button>'
       );
-      var buttonUSD = document.querySelector(".usd");
-      var buttonBGN = document.querySelector(".bgn");
-      buttonBGN.style.display = "none";
-      buttonUSD.style.display = "block";
-      
-      buttonUSD.addEventListener("click", () => {
-        buttonUSD.style.display = "none";
-        buttonBGN.style.display = "block";
-      })
-      buttonBGN.addEventListener("click", () => {
-        buttonBGN.style.display = "none";
-        buttonUSD.style.display = "block";
-      })
       var price;
       var usdRate;
       var textOfPUSD, textOfPUSD2;
